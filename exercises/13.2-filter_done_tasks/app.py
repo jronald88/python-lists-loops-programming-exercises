@@ -11,4 +11,7 @@ tasks = [
 
 
 # Your code here
-
+def filter_done_tasks(data):
+    return data["done"] #no need to specify more as this returns all tasks whose done status is True
+done_tasks = list(filter(filter_done_tasks,tasks))
+print(done_tasks)

@@ -3,6 +3,11 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 counts = {}
 
 # Your code here
-
-
+lower_par = par.lower()
+for letter in lower_par:
+    if letter != " ": #ignore spaces
+        if letter in counts:
+            counts[letter] += 1
+        else:
+            counts[letter] = 1 #this starts the count
 print(counts)
